@@ -1,0 +1,313 @@
+/**
+ * @nombre negcontrasttest
+ * @autor jackcook99
+ * @versión automática
+ * @description un tenue contraste bajo destinado a ser agradable a la vista
+**/
+/*estoy haciendo una prueba*/
+@import url("https://cyb3ry4nd3r3.github.io/negcontrast/negfont/stylesheet.css");
+/* @import url("https://cyb3ry4nd3r3.github.io/negcontrast/tuckedservers.css"); *//*comenta esto para deshabilitar los servidores deslizantes*/
+@import url("https://cyb3ry4nd3r3.github.io/negcontrast/longsettings.css");/*comenta esto si no quieres configuraciones largas*/
+:raíz {
+	/*Primario*/
+	--lv1: #000000;
+	--acento: #124275;
+	--flotar: #0e355f;
+	--header-principal:#a9a9a9;
+	--bg: url('https://i.imgur.com/wXcuT2s.png');
+	--bloque de código:rgba(15,15,15,0.1);
+	--tooltip-color:#f6f6f7;
+	--bg-opacidad: 0,75;
+	--bg-desvanecimiento: 80%;
+	--contraste: .75;
+	--brillo: .75;
+	--ancho de vista: 240px;
+	--ancho oculto: 10px;
+	/*Soporte para otros temas*/
+	--mc: var(--acento);
+	--hc: var(--flotar);
+	--color-principal: var(--acento);
+	--hover-color: var(--hover);
+	--redondez: var(--usuario-redondez);
+	--lvl-bg-opacidad:var(--bg-opacidad);
+	--lvl-bg-fade:var(--bg-fade);
+	--online:var(--éxito);
+	--inactivo:var(--precaución);
+	--dnd:var(--peligro);
+	--offline:var(--no disponible);
+	--invisible:var(--invisible);
+	--streaming:var(--twitch-púrpura);
+
+	/*Discord Vars*/
+	--deprecated-store-bg: var(--lv1);
+	--fondo-primario: var(--lv1);
+	--fondo-secundario: var(--lv1);
+	--background-secundario-alt:var(--lv1);
+	--background-terciario: var(--lv1);
+	--channeltextarea-background:var(--lv1);
+	--background-modifier-active:transparente;
+	--interactivo-activo: var(--canales-predeterminado);
+	/*Estado*/
+	--éxito: #085827;
+	--precaución: #8b7200;
+	--peligro: #7a0606;
+	--no disponible: #33373b;
+	--invisible: #444a52;
+	--información:#325d8d;
+	--contracción-púrpura: rgb(58, 29, 100);
+	--spotify-verde:rgb(16, 92, 42);
+	--xbox-verde:#0a4609;
+	--netflix-rojo:#91090f;
+
+	/*Redondez*/
+	--usuario-redondez:0;
+	--gremios-redondez:0;
+
+	/*Fuentes*/
+	--tamaño: 1,25 rem;
+	--tamaño0: 1,15 rem;
+	--tamaño1: .925rem;
+	--tamaño2: .8 rem;
+	--tamaño3: .75 rem;
+	--size4: .7rem;
+	--size5: .5rem;
+	--size6: .35rem;
+	--letra-espaciado: -.02rem;
+	tamaño de fuente: 17px !importante;
+	--theme-name: 'contraste negativo';
+	--versión del tema: '1.2';
+	--fuente-display:Atkinson;
+	--fuente-principal:Atkinson;
+	/*Tostadas*/
+	--toast-fondo:var(--lv1);
+/*experimentar vars, probablemente no haga mucho, probablemente no debería meterse con ellos*/
+--brand-experiment-100: #f8f9fd !importante;
+    --brand-experiment-130: #f2f4fc!importante;
+    --brand-experiment-160: #ebeefa!importante;
+    --brand-experiment-200: #e3e7f8!importante;
+    --brand-experiment-230: #dae0f5!importante;
+    --brand-experiment-260: #d1d9f3!importante;
+    --brand-experiment-300: #c7d0f0!importante;
+    --brand-experiment-330: #b5c1ec!importante;
+    --brand-experiment-360: #a5b3e7!importante;
+    --brand-experiment-400: #8ea1e1!importante;
+    --brand-experiment-430: #869adf!importante;
+    --brand-experiment-460: #7d92dd!importante;
+    --marca-experimento: #7289da!importante;
+    --brand-experiment-500: #7289da!importante;
+    --brand-experiment-530: #687dc6!importante;
+    --brand-experiment-560: #5c6fb1!importante;
+    --brand-experiment-600: #4e5d94!importante;
+    --brand-experiment-630: #435180!importante;
+    --brand-experiment-660: #3b4770!importante;
+    --brand-experiment-700: #2e3757!importante;
+    --brand-experiment-730: #2b3352!importante;
+    --brand-experiment-760: #272f4b!importante;
+    --brand-experiment-800: #222941!importante;
+    --brand-experiment-830: #1a2032!importante;
+    --brand-experiment-860: #111521!importante;
+    --brand-experiment-900: #06070b!importante;
+    --brand-experiment-05a: rgba(114,137,218,0.05)!importante;
+    --brand-experiment-10a: rgba(114,137,218,0.1)!importante;
+    --brand-experiment-15a: rgba(114,137,218,0.15)!importante;
+    --brand-experiment-20a: rgba(114,137,218,0.2)!importante;
+    --brand-experiment-25a: rgba(114,137,218,0.25)!importante;
+    --brand-experiment-30a: rgba(114,137,218,0.3)!importante;
+    --brand-experiment-35a: rgba(114,137,218,0.35)!importante;
+    --brand-experiment-40a: rgba(114,137,218,0.4)!importante;
+    --brand-experiment-45a: rgba(114,137,218,0.45)!importante;
+    --brand-experiment-50a: rgba(114,137,218,0.5)!importante;
+    --brand-experiment-55a: rgba(114,137,218,0.55)!importante;
+    --brand-experiment-60a: rgba(114,137,218,0.6)!importante;
+    --brand-experiment-65a: rgba(114,137,218,0.65)!importante;
+    --brand-experiment-70a: rgba(114,137,218,0.7)!importante;
+    --brand-experiment-75a: rgba(114,137,218,0.75)!importante;
+    --brand-experiment-80a: rgba(114,137,218,0.8)!importante;
+    --brand-experiment-85a: rgba(114,137,218,0.85)!importante;
+    --brand-experiment-90a: rgba(114,137,218,0.9)!importante;
+    --brand-experiment-95a: rgba(114,137,218,0.95)!importante;
+
+}
+
+
+
+	.contenido-yTz4x3 {
+		filtro: contraste(var(--contraste)) brillo(var(--brillo));
+		fondo: transparente;
+	}
+	.markup-2BOw-j código {
+	    fondo: var(--bloque de código);
+	}
+	.miembros-1998pB, .miembros-1998pB>div {
+	    color de fondo: transparente
+
+
+	}
+	.theme-dark .form-2fGMdU:antes de {
+	    fondo: transparente;
+	}
+	.entrada-2VB9rf{
+		color de fondo: var(--lv1);
+	}
+	.messagesWrapper-3lZDfY::después de {
+		contenido: '';
+		posición: absoluta;
+		ancho: 100%;
+		altura: 100%;
+
+		opacidad: var(--bg-opacidad);
+		archivo adjunto de fondo: fijo;
+		fondo: var(--bg) centro/portada sin repetición;
+		-webkit-mask-image: radial-gradient(black, transparent var(--bg-fade));
+	}
+	.theme-dark .form-2fGMdU:antes, .chat-3bRxxu {
+	    fondo: transparente;
+	}
+	.sidebar-2K8pFh {
+	    fondo: transparente;
+	}
+	.theme-dark .form-2fGMdU:antes, .chat-3bRxxu {
+	    fondo: transparente;
+	}
+	#app-mount:antes de {
+	  contenido: "";
+	  fondo: var(--bg);
+	  posición de fondo: centro;
+	  tamaño de fondo: portada;
+	  posición: absoluta;
+	  altura: 100%;
+	  ancho: 100%;
+	  arriba: 50%;
+	  izquierda: 50%;
+	  transformar: traducir (-50%, -50%);
+	  índice z: 0;
+		opacidad: 0,5;
+	  /*fondo: var(--bg) center/cover no-repeat;*/
+	}
+	.scroller-2LSbBU {
+
+	    fondo: transparente;
+	}
+	.app-2rEoOp {
+
+	    fondo: transparente;
+
+	}
+	.bg-h5JY_x {
+	    color de fondo: var(--lv1);
+			opacidad: var(--bg-opacidad);
+	}
+	.envoltorio-3NnKdC {
+	    color de fondo: var(--fondo-terciario);
+			opacidad: var(--bg-opacidad);
+	}
+	.scroller-RmtA4e {
+	    índice z: 1;
+	    relleno derecho: 8px;
+			color de fondo: transparente;
+			opacidad: var(--bg-opacidad);
+	}
+.contenedor-3w7J-x {
+	    posición: relativa;
+			opacidad: var(--bg-opacidad);
+	}
+	.scroller-1Bvpku {
+	    -webkit-usuario-seleccionar: ninguno;
+	    -moz-usuario-seleccionar: ninguno;
+	    -ms-usuario-seleccionar: ninguno;
+	    selección de usuario: ninguno;
+	    relleno: 12px 0 0;
+	    color de fondo: transparente;
+	    contiene: tamaño del diseño;
+	    filtro: contraste(var(--contraste)) brillo(var(--brillo));
+	}
+.contenedor-3baos1 {
+	filtro: contraste(var(--contraste)) brillo(var(--brillo));
+}
+.tutorialcontainer-2sGCg9 childWrapper-anI2G9 {
+	fondo:transparente!importante;
+	altura de línea: 40px;
+	-máscara-webkit: url("https://i.imgur.com/K8Ps3J7.png");
+	-webkit-mask-size: 40px;
+	-webkit-mask-repeat: sin repetición;
+	-posición de máscara de webkit: centro;
+	color:rgba(255,255,255) !importante;
+}
+.homeIcon-FuNwkv ruta {pantalla: ninguno;}
+.homeIcon-FuNwkv{
+	imagen de fondo: url('https://i.imgur.com/K8Ps3J7.png');
+	color de fondo: transparente! importante;
+	tamaño de fondo: contener;
+	repetición de fondo: sin repetición;
+	margen: 0;
+	altura: 100%;
+	ancho: 100%;
+
+}
+
+.wordmark-2iDDfm {
+	opacidad: 1;
+	ancho: 100%;
+	fondo: var(--lv1);
+	relleno: 0;
+	pantalla: flexible;
+	alinear elementos: centro;
+	altura: 30px;
+	relleno-izquierda: 12px;
+}
+
+.wordmark-2iDDfm svg {
+	pantalla: ninguno;
+}
+
+.wordmark-2iDDfm:antes,
+.wordmark-2iDDfm:después de {
+  tamaño de fuente:var(--tamaño1);
+}
+
+.wordmark-2iDDfm:antes {
+	contenido: var(--nombre-tema);
+	peso de fuente: 600;
+	color: var(--header-primary);
+
+}
+
+.wordmark-2iDDfm:después de {
+	contenido: 'v' var(--theme-version);
+	peso de fuente: 400;
+	color: rgba(255, 255, 255, .8);
+	margen izquierdo: 5px;
+}
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+    color: #fff;
+    color de fondo: rgba(5,5,5,1);
+}
+.personasLista-3c4jOR {
+    parte inferior del relleno: 8px;
+    /* filtro: contraste(var(--contraste)) brillo(var(--brillo)); */
+    fondo: var(--lv1);
+}
+
+.theme-dark .keyboardShortcutsModal-3piNz7 {
+    color de fondo: var(--lv1);
+	}
+	.inner-1ilYF7,.uploadModal-2ifh8j .inner-3nWsbo,.uploadModal-2ifh8j .footer-3mqk7D.hasSpoilers-1IRtQC {
+		  color de fondo: var(--lv1);
+			/*filtro: contraste(var(--contraste)) brillo(var(--brillo));*/
+	}
+
+.toasts-tApoHv.right-Eka_pI,.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K.expandable-3khGbD,.uploadModal-2ifh8j .inner-3nWsbo .comment-4IWttf .label-3aiqT2,.contents-18-Yxp, .checkboxWrapper-SkhIWG,.lookFilled-1Gx00P.colorBrand-3pXr91, .flowerStar-1GeTsn .name-1jkAdW, .tierTooltipTitle-3AtaZT,.toasts,.messagesPopoutWrap-1MQ1bW,.messagesPopoutWrap-1MQ1bW,.userPopout-3XzG-1f5kbO,.mentionO ,.content-2qfHzC,.theme-dark .ctaBar-2UsjF2,.progressBar-2Hd4f8,.headerGraphic-nVhv-X, .headerLogo--hLLAk,.headerBlurb-1GxBrq,.carouselContainerVisible-1JVIpW,.avatarUploaderInner-2EvNMg, .userSettingsSecurity -3IYeMF .isEnabled-24g9qA,.connectionIcon-2ElzVe,.lookFilled-1Gx00P.colorRed-1TFJan,.lookOutlined-3sRXeN.colorRed-1TFJan, .constrainedRow-2GB6Ki,.details-2fkb7l,.sidebar-CFHs9e,.peopleListItem-2nzedh, .niños-19S4PO,.envoltorio-2qzCYF.mínimo-28Z35l,.title-29uC1r,.toolbar-1t6TWx,.wrapper-3EGhDO,.category-2sgp74,.emojiListRowMediumSize-M_K7-z,.textWrapper-2hGAqu,.categoryItemGuildCategory-3MisqI,.accountBtn-2Nozo3,.itemCard-v9viV7:first-of- type,.content-2c3hgM,.diversitySelector-1v4_1A,.bd-emote-item,.nav-7UD0KD,.categoryItemDefaultCategory-aBZ6nJ,.title-31JmR4, .input-rwLH4i.connectedAccounts-2-XP1G,.header-19cWci, .graphicPrimary-1I8l6r,.container-1giJp5,.horizontal-1ae9ci>.flex-1xMQg5:primer hijo, .horizontal-1ae9ci>.flexChild-faoVW3:primer hijo,.permissionCheckmark-1SeKr2,.modeDefault-3a2Ph1,.faded -3bns_w,.voiceCallWrapper-3kPwHm,.content-3YMskv,.title-29uC1r,.theme-dark .pagoPane-3bwJ6A,.theme-dark .bar-2Qqk5Z,.container-3PXSwK,.track-11EASc,.css-4h5swf -singleValue,.emptyStateHeader-248f_b,.emptyStateSubtext-2hdA9c, .guildIcon-c10VUR,.features-3EmM1p,.iconSizeLarge-161qtT,.circle-vWlbvd,.theme-dark .tierLabel-39IsmN, .defaultColor-1_ajX0,.h5-18_1nd,.emptyStateImage-2MrSNs,.promotionIcon-3FDeSa, .gemWithLabel-2aecE_,.subscriptionInfo-14cju1,.heading-3VWlBM, .marketingLogo -1D8DV6,.base-1x0h_U.muted-3-7c5L,.size16-1P40sf,.marketingHeader-d16BX, .guildSubscriptionSlot-1XGRPI:last-child,.theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s ,.theme-dark .nowPlayingAdd-1Kdmh_,.bd-addon-list .bd-footer,.container-1_ClKi,.contentColumnDefault-1VQkGM,.bd-addon-controls,.bd-addon-header .bd-icon,. bd-addon-list .bd-description, .bd-title, .bd-name, .bd-meta, .defaultColor-1_ajX0, .theme-light .nowPlayingAdd-1Kdmh_, .toolbar-1t6TWx {marketingLogo-1D8DV6,.base-1x0h_U.muted-3-7c5L,.size16-1P40sf,.marketingHeader-d16BX, .guildSubscriptionSlot-1XGRPI:last-child,.theme-dark .notDetected-33MY4s, .theme-light .notDetected- 33MY4s,.theme-dark .nowPlayingAdd-1Kdmh_,.bd-addon-list .bd-footer,.container-1_ClKi,.contentColumnDefault-1VQkGM,.bd-addon-controls,.bd-addon-header .bd-icon, .bd-addon-list .bd-description, .bd-title, .bd-name, .bd-meta, .defaultColor-1_ajX0, .theme-light .nowPlayingAdd-1Kdmh_, .toolbar-1t6TWx {marketingLogo-1D8DV6,.base-1x0h_U.muted-3-7c5L,.size16-1P40sf,.marketingHeader-d16BX, .guildSubscriptionSlot-1XGRPI:last-child,.theme-dark .notDetected-33MY4s, .theme-light .notDetected- 33MY4s,.theme-dark .nowPlayingAdd-1Kdmh_,.bd-addon-list .bd-footer,.container-1_ClKi,.contentColumnDefault-1VQkGM,.bd-addon-controls,.bd-addon-header .bd-icon, .bd-addon-list .bd-description, .bd-title, .bd-name, .bd-meta, .defaultColor-1_ajX0, .theme-light .nowPlayingAdd-1Kdmh_, .toolbar-1t6TWx {bd-title, .bd-name, .bd-meta, .defaultColor-1_ajX0, .theme-light .nowPlayingAdd-1Kdmh_, .toolbar-1t6TWx {bd-title, .bd-name, .bd-meta, .defaultColor-1_ajX0, .theme-light .nowPlayingAdd-1Kdmh_, .toolbar-1t6TWx {
+    filtro: contraste(var(--contraste)) brillo(var(--brillo));
+}
+.preview-2nSL_2{
+	  filtro: contraste(var(--contraste)) brillo(var(--brillo));
+}
+.theme-dark .perksModal-fSYqOq,.background-1QDuV2,.preview-2nSL_2,.guildHeader-3nh5RK,.cardWrapper-2Min21,.theme-dark .paymentPane-3bwJ6A, .theme-dark .bottomDivider-1K9Gao,.defaultColor- 1_ajX0,.theme-dark .gemIndicatorContainer-2jdECl,.guildSubscriptionSlots-JPXXvN,.cardPrimary-1Hv-to,.connectionHeader-2MDqhu,.connection-1fbD7X,.accountList-33MS45,.itemCard-v9viV7:first-of-type,. fieldList-21DyL8, .wrapper-2aW0bm, .lookFilled-1Gx00P.colorBrand-3pXr91, .accountBtn-2Nozo3 .accountBtnInner-sj5jLs{
+    color de fondo: transparente;
+}
+.textContainer-C0szpm {
+    color de fondo: var(--codeblock);
+}
+.footer-2yA7Ep {
+    color de fondo: var(--codeblock);
+}
